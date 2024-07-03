@@ -38,9 +38,17 @@ y = le.fit_transform(y)
 
 x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.2, random_state=1)
 
+
+
 ################
 
 
 ### Feature scaling
 
 sc = StandardScaler()
+x_train[:, 3:] = sc.fit_transform(x_train[:, 3:])
+x_test[:, 3:] = sc.transform(x_test[:, 3:])
+
+print(x_train)
+print("___________________")
+print(x_test)
