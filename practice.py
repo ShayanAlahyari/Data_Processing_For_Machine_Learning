@@ -5,7 +5,8 @@ from sklearn.compose import ColumnTransformer
 from sklearn.preprocessing import OneHotEncoder
 from sklearn.impute import SimpleImputer
 from sklearn.preprocessing import LabelEncoder
-
+from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import StandardScaler
 ###############################
 
 # creating our dataset and creating matrix of features and the output column
@@ -34,3 +35,12 @@ y = le.fit_transform(y)
 
 
 # Splitting dataset into training set and test set before feature scaling
+
+x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.2, random_state=1)
+
+################
+
+
+### Feature scaling
+
+sc = StandardScaler()
