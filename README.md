@@ -1,4 +1,4 @@
-# Data Preprocessing Script
+# Data Processing for Machine Learning
 
 This repository contains a Python script for preprocessing a dataset using various techniques such as handling missing data, encoding categorical variables, splitting the dataset into training and test sets, and feature scaling.
 
@@ -14,17 +14,17 @@ This repository contains a Python script for preprocessing a dataset using vario
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/ShayanAlahyari/data-preprocessing.git
+    git clone https://github.com/ShayanAlahyari/Data_Processing_For_Machine_Learning.git
     ```
 
 2. Navigate to the repository directory:
     ```bash
-    cd data-preprocessing
+    cd Data_Processing_For_Machine_Learning
     ```
 
 3. Install the required dependencies:
     ```bash
-    pip install -r requirements.txt
+    pip install numpy pandas scikit-learn
     ```
 
 ## Usage
