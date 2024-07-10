@@ -14,12 +14,12 @@ This repository contains a Python script for preprocessing a dataset using vario
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/yourusername/data-preprocessing-script.git
+    git clone https://github.com/ShayanAlahyari/data-preprocessing.git
     ```
 
 2. Navigate to the repository directory:
     ```bash
-    cd data-preprocessing-script
+    cd data-preprocessing
     ```
 
 3. Install the required dependencies:
@@ -32,12 +32,12 @@ This repository contains a Python script for preprocessing a dataset using vario
 1. Place your dataset file (`Data.csv`) in the repository directory.
 2. Run the preprocessing script:
     ```bash
-    python preprocess.py
+    python data_processing.py
     ```
 
 ## Script Overview
 
-The `preprocess.py` script performs the following steps:
+The `data_processing.py` script performs the following steps:
 
 1. **Importing Libraries**:
     - Imports necessary libraries such as `numpy`, `pandas`, and various `sklearn` modules.
