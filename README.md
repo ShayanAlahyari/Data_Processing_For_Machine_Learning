@@ -1,72 +1,73 @@
-Data Preprocessing Script
+# Data Preprocessing Script
 
 This repository contains a Python script for preprocessing a dataset using various techniques such as handling missing data, encoding categorical variables, splitting the dataset into training and test sets, and feature scaling.
 
-Table of Contents
+## Table of Contents
 
-Installation
-Usage
-Script Overview
-Dependencies
-License
-Installation
+- [Installation](#installation)
+- [Usage](#usage)
+- [Script Overview](#script-overview)
+- [Dependencies](#dependencies)
+- [License](#license)
 
-Clone the repository:
+## Installation
 
-bash
-Copy code
-git clone https://github.com/yourusername/data-preprocessing-script.git
-Navigate to the repository directory:
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/yourusername/data-preprocessing-script.git
+    ```
 
-bash
-Copy code
-cd data-preprocessing-script
-Install the required dependencies:
+2. Navigate to the repository directory:
+    ```bash
+    cd data-preprocessing-script
+    ```
 
-bash
-Copy code
-pip install -r requirements.txt
-Usage
+3. Install the required dependencies:
+    ```bash
+    pip install -r requirements.txt
+    ```
 
-Place your dataset file (Data.csv) in the repository directory.
-Run the preprocessing script:
-bash
-Copy code
-python preprocess.py
-Script Overview
+## Usage
 
-The preprocess.py script performs the following steps:
+1. Place your dataset file (`Data.csv`) in the repository directory.
+2. Run the preprocessing script:
+    ```bash
+    python preprocess.py
+    ```
 
-Importing Libraries:
+## Script Overview
 
-Imports necessary libraries such as numpy, pandas, and various sklearn modules.
-Loading the Dataset:
+The `preprocess.py` script performs the following steps:
 
-Loads the dataset from Data.csv.
-Creates a matrix of features (x) and an output column (y).
-Handling Missing Data:
+1. **Importing Libraries**:
+    - Imports necessary libraries such as `numpy`, `pandas`, and various `sklearn` modules.
 
-Uses SimpleImputer to fill missing values in the dataset with the mean value of the respective column.
-Encoding Categorical Data:
+2. **Loading the Dataset**:
+    - Loads the dataset from `Data.csv`.
+    - Creates a matrix of features (`x`) and an output column (`y`).
 
-Uses OneHotEncoder to encode categorical features.
-Uses LabelEncoder to encode the output labels.
-Splitting the Dataset:
+3. **Handling Missing Data**:
+    - Uses `SimpleImputer` to fill missing values in the dataset with the mean value of the respective column.
 
-Splits the dataset into training and test sets using train_test_split.
-Feature Scaling:
+4. **Encoding Categorical Data**:
+    - Uses `OneHotEncoder` to encode categorical features.
+    - Uses `LabelEncoder` to encode the output labels.
 
-Scales the features using StandardScaler.
-Dependencies
+5. **Splitting the Dataset**:
+    - Splits the dataset into training and test sets using `train_test_split`.
+
+6. **Feature Scaling**:
+    - Scales the features using `StandardScaler`.
+
+## Dependencies
 
 The script requires the following Python libraries:
 
-numpy
-pandas
-scikit-learn
-You can install these dependencies using pip:
+- numpy
+- pandas
+- scikit-learn
 
-bash
-Copy code
+You can install these dependencies using `pip`:
+
+```bash
 pip install numpy pandas scikit-learn
-
